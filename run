@@ -1,22 +1,12 @@
 #! usr/bin/env php
 <?php
 
-namespace Structural\Adapter;
+namespace Structural\Registry;
 
 require_once 'vendor/autoload.php';
 
-$registry = new Registry();
+Registry::setData('stdClass', new \stdClass());
 
-$registry->setFirstValue('FirstValue');
-$registry->setSecondValue('3.14');
+$object = Registry::getData('stdClass');
 
-printf("%s \n", $registry->getFirstValue());
-printf("%s \n", $registry->getSecondValue());
-
-$anotherRegistry = new AnotherRegistryAdapter($registry);
-
-$anotherRegistry->setFirstValue('FirstValue');
-$anotherRegistry->setSecondValue('3.14');
-
-printf("%s \n", $anotherRegistry->getFirstValue());
-printf("%s \n", $anotherRegistry->getSecondValue());
+print_r($object);

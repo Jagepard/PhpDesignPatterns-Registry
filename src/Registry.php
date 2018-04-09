@@ -46,7 +46,7 @@ class Registry
      */
     public static function setData(string $key, \stdClass $data)
     {
-        if (!array_key_exists($key, self::ALLOWED_KEYS)) {
+        if (!in_array($key, self::ALLOWED_KEYS)) {
             throw new \InvalidArgumentException('Invalid key given');
         }
 
