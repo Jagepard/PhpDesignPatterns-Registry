@@ -1,9 +1,9 @@
 [![Build Status](https://travis-ci.org/Jagepard/PhpDesignPatterns-Registry.svg?branch=master)](https://travis-ci.org/Jagepard/PhpDesignPatterns-Registry)
+[![codecov](https://codecov.io/gh/Jagepard/PhpDesignPatterns-Registry/branch/master/graph/badge.svg)](https://codecov.io/gh/Jagepard/PhpDesignPatterns-Registry)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Jagepard/PhpDesignPatterns-Registry/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Jagepard/PhpDesignPatterns-Registry/?branch=master)
-[![Maintainability](https://api.codeclimate.com/v1/badges/7a6e4faef5f3bedee182/maintainability)](https://codeclimate.com/github/Jagepard/PhpDesignPatterns-Registry/maintainability)
-
-![Registry](https://github.com/Jagepard/PhpDesignPatterns-Registry/blob/master/Registry.png?raw=true "Registry")
-
+[![Code Climate](https://codeclimate.com/github/Jagepard/PhpDesignPatterns-Registry/badges/gpa.svg)](https://codeclimate.com/github/Jagepard/PhpDesignPatterns-Registry)
+[![License: MIT](https://img.shields.io/badge/license-MIT-498e7f.svg)](https://mit-license.org/)
+-----
 
 # Registry
-Реестр 
+Реестр
