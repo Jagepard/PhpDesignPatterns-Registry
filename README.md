@@ -7,3 +7,5 @@
 
 # Registry
 Реестр
+
+![Registry](https://github.com/Jagepard/PhpDesignPatterns-Registry/blob/master/UML.png)
