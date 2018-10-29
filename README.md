@@ -7,3 +7,5 @@
 
 # Registry | [API](https://github.com/Jagepard/PhpDesignPatterns-Proxy/blob/master/docs.md "Documentation API")
 Реестр
+
+![Registry](https://github.com/Jagepard/PhpDesignPatterns-Registry/blob/master/UML.png)
