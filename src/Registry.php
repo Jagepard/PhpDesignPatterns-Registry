@@ -13,9 +13,8 @@ namespace Structural\Registry;
  * Class Registry
  * @package Structural\Registry
  */
-class Registry
+final class Registry
 {
-
     const ALLOWED_KEYS = [
         'stdClass'
     ];
@@ -23,7 +22,7 @@ class Registry
     /**
      * @var array
      */
-    protected static $data = [];
+    private static $data = [];
 
     /**
      * @param string $key
