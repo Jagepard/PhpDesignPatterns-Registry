@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace Structural\Registry;
 
-/**
- * Class Registry
- * @package Structural\Registry
- */
 final class Registry
 {
     const ALLOWED_KEYS = [
