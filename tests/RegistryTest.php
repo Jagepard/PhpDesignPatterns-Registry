@@ -12,10 +12,6 @@ namespace Structural\Registry\Tests;
 use Structural\Registry\Registry;
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
-/**
- * Class RegistryTest
- * @package Structural\Registry\Tests
- */
 class RegistryTest extends PHPUnit_Framework_TestCase
 {
 
