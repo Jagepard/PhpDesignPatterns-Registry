@@ -6,6 +6,11 @@
 -----
 
 # Registry | [API](https://github.com/Jagepard/PhpDesignPatterns-Proxy/blob/master/docs.md "Documentation API")
-Реестр
+```php main.php``` execute in terminal
 
-![Registry](https://github.com/Jagepard/PhpDesignPatterns-Registry/blob/master/UML.png)
+## Result:
+```
+stdClass Object
+(
+)
+```
