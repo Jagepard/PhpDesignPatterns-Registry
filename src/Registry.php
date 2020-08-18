@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 /**
- * @author    : Korotkov Danila <dankorot@gmail.com>
- * @license   https://mit-license.org/ MIT
+ * @author  : Jagepard <jagepard@yandex.ru>
+ * @license https://mit-license.org/ MIT
  */
 
 namespace Structural\Registry;
@@ -15,28 +15,17 @@ final class Registry
         'stdClass'
     ];
 
-    /**
-     * @var array
-     */
-    private static $data = [];
+    private static array $data = [];
 
-    /**
-     * @param string $key
-     * @return \stdClass
-     */
     public static function getData(string $key): \stdClass
     {
-        if (!array_key_exists($key, self::$data) || !isset(self::$data[$key])) {
+        if (!array_key_exists($key, self::$data)) {
             throw new \InvalidArgumentException('Invalid key given');
         }
         
         return self::$data[$key];
     }
 
-    /**
-     * @param $key
-     * @param $data
-     */
     public static function setData(string $key, \stdClass $data)
     {
         if (!in_array($key, self::ALLOWED_KEYS)) {

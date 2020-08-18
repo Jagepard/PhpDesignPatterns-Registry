@@ -6,8 +6,12 @@
 -----
 
 # Registry | [API](https://github.com/Jagepard/PhpDesignPatterns-Proxy/blob/master/docs.md "Documentation API")
-```php run``` Запустить исполнение шаблона в терминале
 
-Реестр
+```php main.php``` execute in terminal
 
-![Registry](https://github.com/Jagepard/PhpDesignPatterns-Registry/blob/master/UML.png)
+## Result:
+```
+stdClass Object
+(
+)
+```
