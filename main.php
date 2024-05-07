@@ -5,8 +5,9 @@ namespace Structural\Registry;
 
 require_once "vendor/autoload.php";
 
-Registry::setData("stdClass", new \stdClass());
+$registry = new Registry();
+$registry->set("stdClass", new \stdClass());
 
-$object = Registry::getData("stdClass");
+$object = $registry->get("stdClass");
 
 print_r($object);
