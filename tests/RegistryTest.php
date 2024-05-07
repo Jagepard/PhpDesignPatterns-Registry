@@ -14,21 +14,28 @@ use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
 class RegistryTest extends PHPUnit_Framework_TestCase
 {
-    public function testRegistry()
+    private Registry $registry;
+
+    public function setUp(): void
     {
-        Registry::setData("stdClass", new \stdClass());
-        $this->assertInstanceOf(\stdClass::class, Registry::getData("stdClass"));
+        $this->registry = new Registry();
     }
 
-    public function testSetDataException()
+    public function testRegistry(): void
+    {
+        $this->registry->set("stdClass", new \stdClass());
+        $this->assertInstanceOf(\stdClass::class, $this->registry->get("stdClass"));
+    }
+
+    public function testSetDataException(): void
     {
         $this->expectException(\InvalidArgumentException::class);
-        Registry::setData("StdClass", new \stdClass());
+        $this->registry->set("StdClass", new \stdClass());
     } // @codeCoverageIgnore
 
-    public function testGetDataException()
+    public function testGetDataException(): void
     {
         $this->expectException(\InvalidArgumentException::class);
-        Registry::getData("StdClass");
+        $this->registry->get("StdClass");
     } // @codeCoverageIgnore
 }

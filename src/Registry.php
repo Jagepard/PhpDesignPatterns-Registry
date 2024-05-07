@@ -15,23 +15,23 @@ final class Registry
         'stdClass'
     ];
 
-    private static array $data = [];
+    private array $data = [];
 
     /**
      * Receives data
      * -------------
      * Получает данные
      *
-     * @param  string    $key
-     * @return \stdClass
+     * @param  string $key
+     * @return mixed
      */
-    public static function getData(string $key): \stdClass
+    public function get(string $key): mixed
     {
-        if (!array_key_exists($key, self::$data)) {
+        if (!array_key_exists($key, $this->data)) {
             throw new \InvalidArgumentException('Invalid key given');
         }
         
-        return self::$data[$key];
+        return $this->data[$key];
     }
 
     /**
@@ -39,16 +39,16 @@ final class Registry
      * ---------
      * Добавляет данные
      *
-     * @param  string    $key
-     * @param  \stdClass $data
+     * @param  string $key
+     * @param  mixed  $data
      * @return void
      */
-    public static function setData(string $key, \stdClass $data)
+    public function set(string $key, mixed $data): void
     {
         if (!in_array($key, self::ALLOWED_KEYS)) {
             throw new \InvalidArgumentException('Invalid key given');
         }
 
-        self::$data[$key] = $data;
+        $this->data[$key] = $data;
     }
 }
